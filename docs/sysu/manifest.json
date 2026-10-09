@@ -1,0 +1,148 @@
+{
+  "dataset": "SYSU-CD",
+  "checkpoint": "D:\\Individual_file\\Model Net\\HiVerNet\\runs\\loss iter\\full\\checkpoints\\best_IoU.pth",
+  "sha256": "a799046ec0f95cd2af20e96a86a9680669465834c5cbdc1169b69f5bd605913a",
+  "epoch": 41,
+  "threshold": 0.3,
+  "data": "D:\\Individual_file\\data\\SYSU-CD\\test",
+  "device": "cpu",
+  "strict_load": true,
+  "selection": "128 evenly spaced test candidates. Top F1 in GT fraction bands .02-.08/.08-.25/.25-.75, up to 4 each; fill by F1; fallback .005-.9 if needed.",
+  "selected": [
+    {
+      "name": "00787.png",
+      "TP": 1742,
+      "FP": 101,
+      "FN": 16,
+      "F1": 0.9675090252707581,
+      "IoU": 0.9370629370629371,
+      "Precision": 0.9451980466630494,
+      "Recall": 0.9908987485779295,
+      "gt_fraction": 0.026824951171875
+    },
+    {
+      "name": "03999.png",
+      "TP": 3761,
+      "FP": 66,
+      "FN": 273,
+      "F1": 0.956875715557817,
+      "IoU": 0.9173170731707317,
+      "Precision": 0.9827541154951659,
+      "Recall": 0.9323252354982647,
+      "gt_fraction": 0.061553955078125
+    },
+    {
+      "name": "00944.png",
+      "TP": 4856,
+      "FP": 537,
+      "FN": 32,
+      "F1": 0.9446551891839315,
+      "IoU": 0.8951152073732719,
+      "Precision": 0.9004264787687744,
+      "Recall": 0.9934533551554828,
+      "gt_fraction": 0.0745849609375
+    },
+    {
+      "name": "01826.png",
+      "TP": 2693,
+      "FP": 336,
+      "FN": 89,
+      "F1": 0.9268628463259335,
+      "IoU": 0.8636946760744066,
+      "Precision": 0.8890723010894684,
+      "Recall": 0.9680086268871315,
+      "gt_fraction": 0.042449951171875
+    },
+    {
+      "name": "01952.png",
+      "TP": 10325,
+      "FP": 186,
+      "FN": 136,
+      "F1": 0.9846461949265688,
+      "IoU": 0.9697567389875082,
+      "Precision": 0.9823042526876605,
+      "Recall": 0.9869993308479112,
+      "gt_fraction": 0.1596221923828125
+    },
+    {
+      "name": "02487.png",
+      "TP": 5982,
+      "FP": 133,
+      "FN": 73,
+      "F1": 0.9830731306491373,
+      "IoU": 0.9667097608274079,
+      "Precision": 0.978250204415372,
+      "Recall": 0.987943848059455,
+      "gt_fraction": 0.0923919677734375
+    },
+    {
+      "name": "01731.png",
+      "TP": 13181,
+      "FP": 592,
+      "FN": 11,
+      "F1": 0.9776376784720935,
+      "IoU": 0.95625362739408,
+      "Precision": 0.9570173527916939,
+      "Recall": 0.9991661613098848,
+      "gt_fraction": 0.2012939453125
+    },
+    {
+      "name": "02770.png",
+      "TP": 12938,
+      "FP": 386,
+      "FN": 921,
+      "F1": 0.9519184784608027,
+      "IoU": 0.9082485082485082,
+      "Precision": 0.9710297208045632,
+      "Recall": 0.9335449888159318,
+      "gt_fraction": 0.2114715576171875
+    },
+    {
+      "name": "03684.png",
+      "TP": 23972,
+      "FP": 1130,
+      "FN": 7,
+      "F1": 0.9768342128318493,
+      "IoU": 0.9547174319964953,
+      "Precision": 0.9549836666401084,
+      "Recall": 0.9997080779014972,
+      "gt_fraction": 0.3658905029296875
+    },
+    {
+      "name": "02298.png",
+      "TP": 44894,
+      "FP": 974,
+      "FN": 2051,
+      "F1": 0.967407582989452,
+      "IoU": 0.9368726392453932,
+      "Precision": 0.9787651521758088,
+      "Recall": 0.9563105762061987,
+      "gt_fraction": 0.7163238525390625
+    },
+    {
+      "name": "00409.png",
+      "TP": 22840,
+      "FP": 115,
+      "FN": 1546,
+      "F1": 0.9649141336262437,
+      "IoU": 0.9322068487000531,
+      "Precision": 0.9949901982138968,
+      "Recall": 0.9366029689165914,
+      "gt_fraction": 0.372100830078125
+    },
+    {
+      "name": "02015.png",
+      "TP": 23460,
+      "FP": 815,
+      "FN": 1014,
+      "F1": 0.9624812816673163,
+      "IoU": 0.9276760646921587,
+      "Precision": 0.9664263645726056,
+      "Recall": 0.9585682765383673,
+      "gt_fraction": 0.373443603515625
+    }
+  ],
+  "preprocessing": "Exact repository Normalize and ToTensor; internal t2 corresponds to source Time 1, internal t1 to source Time 2.",
+  "h2dm": "Mean absolute activation; actual shared/private/reconstruction for each acquisition time. Pairwise joint p99 scale per stage/column. Joint diff once per stage.",
+  "note": "Qualitative selected examples, not overall test performance; no causal ablation."
+}

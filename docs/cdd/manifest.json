@@ -1,0 +1,148 @@
+{
+  "dataset": "CDD",
+  "checkpoint": "D:\\Individual_file\\Model Net\\HiVerNet\\runs\\datasets\\cdd\\datasets_TSDChangeDetector_20260527_174754\\checkpoints\\best_F1.pth",
+  "sha256": "2db4807da445f5663e0a713544b2a0aba52e7c3f76c69c7335ba690ca11ebef7",
+  "epoch": 483,
+  "threshold": 0.6,
+  "data": "D:\\Individual_file\\data\\CDD\\test",
+  "device": "cpu",
+  "strict_load": true,
+  "selection": "128 evenly spaced test candidates. Top F1 in GT fraction bands .02-.08/.08-.25/.25-.75, up to 4 each; fill by F1; fallback .005-.9 if needed.",
+  "selected": [
+    {
+      "name": "02101.jpg",
+      "TP": 2493,
+      "FP": 47,
+      "FN": 55,
+      "F1": 0.9799528301886793,
+      "IoU": 0.9606936416184971,
+      "Precision": 0.981496062992126,
+      "Recall": 0.978414442700157,
+      "gt_fraction": 0.03887939453125
+    },
+    {
+      "name": "02243.jpg",
+      "TP": 2257,
+      "FP": 32,
+      "FN": 84,
+      "F1": 0.9749460043196544,
+      "IoU": 0.9511167298777918,
+      "Precision": 0.9860200961118393,
+      "Recall": 0.9641178983340453,
+      "gt_fraction": 0.0357208251953125
+    },
+    {
+      "name": "02007.jpg",
+      "TP": 2945,
+      "FP": 56,
+      "FN": 109,
+      "F1": 0.9727497935590421,
+      "IoU": 0.9469453376205788,
+      "Precision": 0.9813395534821726,
+      "Recall": 0.964309102815979,
+      "gt_fraction": 0.046600341796875
+    },
+    {
+      "name": "00850.jpg",
+      "TP": 3834,
+      "FP": 85,
+      "FN": 130,
+      "F1": 0.9727261194976532,
+      "IoU": 0.946900469251667,
+      "Precision": 0.9783107935697882,
+      "Recall": 0.9672048435923309,
+      "gt_fraction": 0.06048583984375
+    },
+    {
+      "name": "01204.jpg",
+      "TP": 11687,
+      "FP": 122,
+      "FN": 95,
+      "F1": 0.9908015768725361,
+      "IoU": 0.9817708333333334,
+      "Precision": 0.9896688966042849,
+      "Recall": 0.9919368528263453,
+      "gt_fraction": 0.179779052734375
+    },
+    {
+      "name": "01841.jpg",
+      "TP": 15473,
+      "FP": 99,
+      "FN": 215,
+      "F1": 0.989955214331414,
+      "IoU": 0.9801102172673719,
+      "Precision": 0.9936424351399948,
+      "Recall": 0.9862952575216726,
+      "gt_fraction": 0.2393798828125
+    },
+    {
+      "name": "01322.jpg",
+      "TP": 13846,
+      "FP": 77,
+      "FN": 267,
+      "F1": 0.9877300613496932,
+      "IoU": 0.9757575757575757,
+      "Precision": 0.9944695827048768,
+      "Recall": 0.9810812725855594,
+      "gt_fraction": 0.2153472900390625
+    },
+    {
+      "name": "02904.jpg",
+      "TP": 7700,
+      "FP": 121,
+      "FN": 161,
+      "F1": 0.9820175997959444,
+      "IoU": 0.96467050864445,
+      "Precision": 0.9845288326300985,
+      "Recall": 0.9795191451469278,
+      "gt_fraction": 0.1199493408203125
+    },
+    {
+      "name": "00873.jpg",
+      "TP": 41165,
+      "FP": 101,
+      "FN": 112,
+      "F1": 0.9974195267920962,
+      "IoU": 0.9948523369906713,
+      "Precision": 0.9975524644986187,
+      "Recall": 0.9972866245124403,
+      "gt_fraction": 0.6298370361328125
+    },
+    {
+      "name": "01983.jpg",
+      "TP": 47503,
+      "FP": 269,
+      "FN": 289,
+      "F1": 0.9941609811225984,
+      "IoU": 0.9883897546867523,
+      "Precision": 0.9943690864941807,
+      "Recall": 0.9939529628389688,
+      "gt_fraction": 0.729248046875
+    },
+    {
+      "name": "00141.jpg",
+      "TP": 31700,
+      "FP": 182,
+      "FN": 254,
+      "F1": 0.9931699981201829,
+      "IoU": 0.9864326611899428,
+      "Precision": 0.9942914497208456,
+      "Recall": 0.9920510734180384,
+      "gt_fraction": 0.487579345703125
+    },
+    {
+      "name": "02550.jpg",
+      "TP": 46406,
+      "FP": 253,
+      "FN": 413,
+      "F1": 0.9928753289544063,
+      "IoU": 0.9858514615907545,
+      "Precision": 0.9945776806189588,
+      "Recall": 0.9911787949336808,
+      "gt_fraction": 0.7144012451171875
+    }
+  ],
+  "preprocessing": "Exact repository Normalize and ToTensor; internal t2 corresponds to source Time 1, internal t1 to source Time 2.",
+  "h2dm": "Mean absolute activation; actual shared/private/reconstruction for each acquisition time. Pairwise joint p99 scale per stage/column. Joint diff once per stage.",
+  "note": "Qualitative selected examples, not overall test performance; no causal ablation."
+}
